@@ -1,0 +1,35 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+.stats{
+    strong{
+        font-size: 1.2rem;
+    }
+
+    .answers{
+        padding: 10px;
+        border-radius: 7px;
+
+        &.answered{
+            border: solid 1px $success;
+            color: $success;
+        }
+
+        &.has-best-answer{
+            background: $success;
+            color: white;
+        }
+
+        &.not-answered{
+            border: solid 1px $danger;
+            color: $danger;
+        }
+    }
+}
